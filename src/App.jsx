@@ -17,7 +17,9 @@ function App() {
     const getRestaurantData = async () => {
       try {
         // const url = "http://localhost:3000/";
-        const serverUrl = "site--deliveroo-backend--r6xgg7xm7vcz.code.run";
+        // const serverUrl = "site--deliveroo-backend--r6xgg7xm7vcz.code.run";
+        const serverUrl =
+          "https://site--deliveroo-backend--r6xgg7xm7vcz.code.run/";
         const { data } = await axios.get(serverUrl);
         setData(data);
         // console.log("App.jsx >>>>>>", data.data.items);
