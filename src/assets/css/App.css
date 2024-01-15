@@ -1,0 +1,36 @@
+@import "./reset.css";
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.title-div {
+  display: flex;
+}
+.title-div img {
+  width: 475px;
+  height: 270px;
+}
+.menus-list-div {
+  width: 1200px;
+}
+.menus-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menus-div > div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.menus-div > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+}
+.menus-list-div img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
