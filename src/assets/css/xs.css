@@ -1,0 +1,29 @@
+@media (min-width: 0px) {
+  /* .xs-hidden {
+    display: none;
+  } */
+  .xs-col {
+    flex-direction: column;
+  }
+
+  .xs-14 {
+    font-size: 14px;
+  }
+  /* .xs-16 {
+    font-size: 16px;
+  } */
+
+  .xs-18 {
+    font-size: 18px;
+  }
+  .xs-28 {
+    font-size: 28px;
+  }
+  .xs-w100vw {
+    width: 100vw;
+  }
+  .xs-mg-lr-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

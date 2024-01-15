@@ -16,11 +16,14 @@ function App() {
   useEffect(() => {
     const getRestaurantData = async () => {
       try {
-        // const url = "http://localhost:3000/";
-        // const serverUrl = "site--deliveroo-backend--r6xgg7xm7vcz.code.run";
-        const serverUrl =
-          "https://site--deliveroo-backend--r6xgg7xm7vcz.code.run/";
-        const { data } = await axios.get(serverUrl);
+        // LOCAL
+        const url = "http://localhost:3000/";
+        const { data } = await axios.get(url);
+        // REMOTE
+        // const serverUrl =
+        //   "https://site--deliveroo-backend--r6xgg7xm7vcz.code.run/";
+        // const { data } = await axios.get(serverUrl);
+        //
         setData(data);
         // console.log("App.jsx >>>>>>", data.data.items);
       } catch (error) {
@@ -41,7 +44,10 @@ function App() {
         ) : (
           <div>
             <Title data={data.data.meta} />
-            <Menus data={data.data.items} />
+            <div className="lg-row">
+              <Menus data={data.data.items} />
+              <div className="lg-w420"></div>
+            </div>
           </div>
         )}
       </main>

@@ -1,0 +1,10 @@
+@media (min-width: 1200px) {
+  .xl-wrap {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+  }
+  .xl-w45pc {
+    width: 45%;
+  }
+}

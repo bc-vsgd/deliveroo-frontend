@@ -4,13 +4,9 @@ const Title = ({ data }) => {
   const name = data.restaurant.name;
   const imgUrl = data.metatags.image;
   return (
-    <div className="title-div">
-      <div>
-        <img src={imgUrl} alt="Photo" />
-      </div>
-      <div>
-        <div>{name}</div>
-      </div>
+    <div className="title-div sm-w90vw xs-col sm-row">
+      <img className="xs-w100vw sm-w40pc" src={imgUrl} alt="Photo" />
+      <div className="stratos bold xs-28 lg-40 sm-w360 lg-w400">{name}</div>
     </div>
   );
 };

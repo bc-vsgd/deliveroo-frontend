@@ -1,0 +1,25 @@
+@media (min-width: 576px) {
+  /* .sm-visible {
+    display: inline;
+  } */
+  .sm-row {
+    flex-direction: row;
+  }
+
+  .sm-16 {
+    font-size: 16px;
+  }
+
+  .sm-22 {
+    font-size: 22px;
+  }
+  .sm-w40pc {
+    width: 40%;
+  }
+  .sm-w90vw {
+    width: 90%;
+  }
+  .sm-w360 {
+    width: 360px;
+  }
+}

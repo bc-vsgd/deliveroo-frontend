@@ -1,0 +1,25 @@
+body {
+  font-family: "IBM Plex Sans";
+}
+.stratos {
+  font-family: "Stratos Deliveroo Web";
+}
+.bold {
+  font-weight: bold;
+}
+.common-row {
+  flex-direction: row;
+}
+.common-col {
+  flex-direction: column;
+}
+.common-14 {
+  font-size: 14px;
+}
+.common-16 {
+  font-size: 16px;
+}
+
+.menus-div {
+  display: flex;
+}
