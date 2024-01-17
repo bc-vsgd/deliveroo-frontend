@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./fonts.css";
+@import "./icons.css";
 @import "./common.css";
 @import "./xs.css";
 @import "./sm.css";
@@ -10,28 +11,22 @@
 h2 {
   margin-bottom: 20px;
 }
-
 .title-div {
   border: 1px solid blue;
   display: flex;
   gap: 25px;
 }
-/* .menus-div {
+.menus-div {
   display: flex;
-  border: 1px solid green;
-  flex-wrap: wrap;
-} */
+}
 .menus-div > div {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
 }
 .menus-div > div > div:first-child {
   display: flex;
-  gap: 10px;
 }
-.menus-list-div .menus-div img {
+.menus-div img {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  border: 1px solid #d1d4d4;
 }

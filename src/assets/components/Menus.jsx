@@ -28,6 +28,7 @@ const Menus = ({ data }) => {
   console.log("My way menus >>>> ", myWayMenus);
 
   return (
+    // <div className="menus lg-w400">
     <div>
       <MenusList title="Menus SERIES" data={seriesMenus} />
       <MenusList title="Menus SUBMELTS" data={submeltsMenus} />

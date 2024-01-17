@@ -22,8 +22,31 @@
   .xs-w100vw {
     width: 100vw;
   }
+
+  .xs-pad-10-0-10-20 {
+    padding: 10px 0 10px 20px;
+  }
+
   .xs-mg-lr-20 {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .xs-mg-l-20 {
+    margin-left: 20px;
+  }
+  /* .xs-mg-r-20 {
+    margin-right: 20px;
+  } */
+  .xs-mg-b-30 {
+    margin-bottom: 30px;
+  }
+  /* FOOTER */
+  footer div {
+    font-size: 13px;
+    gap: 5px;
+    padding: 15px 0;
+  }
+  .xs-hidden {
+    display: none;
   }
 }

@@ -22,4 +22,24 @@
   .sm-w360 {
     width: 360px;
   }
+  .sm-pad-20-0-20-25 {
+    padding: 20px 0 20px 25px;
+  }
+  /* FOOTER */
+
+  .sm-visible {
+    display: inline;
+  }
+  footer div {
+    padding-top: 20px;
+  }
+  footer a {
+    gap: 5px;
+  }
+  footer img {
+    height: 25px;
+  }
+  .footer-icon {
+    font-size: 25px;
+  }
 }
