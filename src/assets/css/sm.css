@@ -1,35 +1,9 @@
+/* OVER 576 PX WIDTH SCREENS STYLE RULES */
+
 @media (min-width: 576px) {
-  /* .sm-visible {
-    display: inline;
-  } */
-  .sm-row {
-    flex-direction: row;
-  }
-
-  .sm-16 {
-    font-size: 16px;
-  }
-
-  .sm-22 {
-    font-size: 22px;
-  }
-  .sm-w40pc {
-    width: 40%;
-  }
-  .sm-w90vw {
-    width: 90%;
-  }
-  .sm-w360 {
-    width: 360px;
-  }
-  .sm-pad-20-0-20-25 {
-    padding: 20px 0 20px 25px;
-  }
+  /* FOOTER */
   /* FOOTER */
 
-  .sm-visible {
-    display: inline;
-  }
   footer div {
     padding-top: 20px;
   }
@@ -41,5 +15,44 @@
   }
   .footer-icon {
     font-size: 25px;
+  }
+
+  /* GENERAL */
+  /* GENERAL */
+
+  /* DISPLAY */
+
+  .sm-visible {
+    display: inline;
+  }
+  .sm-row {
+    flex-direction: row;
+  }
+
+  /* FONT */
+
+  .sm-16 {
+    font-size: 16px;
+  }
+  .sm-22 {
+    font-size: 22px;
+  }
+
+  /* BOX */
+
+  /* Width */
+  .sm-w40pc {
+    width: 40%;
+  }
+  .sm-w90vw {
+    width: 90%;
+  }
+  .sm-w360 {
+    width: 360px;
+  }
+
+  /* Padding */
+  .sm-pad-20-0-20-25 {
+    padding: 20px 0 20px 25px;
   }
 }

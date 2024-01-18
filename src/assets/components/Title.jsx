@@ -1,6 +1,6 @@
 const Title = ({ data }) => {
   // data: data.data.meta
-  console.log(data);
+
   const name = data.restaurant.name;
   const imgUrl = data.metatags.image;
   return (

@@ -17,29 +17,31 @@ import Footer from "./assets/components/Footer";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
+  const [basket, setBasket] = useState([]);
+  const [isPaid, setIsPaid] = useState(false);
 
   useEffect(() => {
     const getRestaurantData = async () => {
       try {
         // LOCAL
-        const url = "http://localhost:3000/";
-        const { data } = await axios.get(url);
+        // const url = "http://localhost:3000/";
+        // const { data } = await axios.get(url);
 
         // REMOTE
-        // const serverUrl =
-        //   "https://site--deliveroo-backend--r6xgg7xm7vcz.code.run/";
-        // const { data } = await axios.get(serverUrl);
+        const serverUrl =
+          "https://site--deliveroo-backend--r6xgg7xm7vcz.code.run/";
+        const { data } = await axios.get(serverUrl);
         //
         setData(data);
-        // console.log("App.jsx >>>>>>", data.data.items);
       } catch (error) {
         console.log(error.response);
       }
       setIsLoading(false);
-      console.log("isLoading >>>>>", isLoading);
+      // console.log("isLoading >>>>>", isLoading);
+      setIsPaid(false);
     };
     getRestaurantData();
-  }, []);
+  }, [isPaid]);
 
   return (
     <>
@@ -53,8 +55,17 @@ function App() {
           <div>
             <Title data={data.data.meta} />
             <div className="lg-row">
-              <Menus data={data.data.items} />
-              <Basket />
+              <Menus
+                data={data.data.items}
+                basket={basket}
+                setBasket={setBasket}
+              />
+              <Basket
+                basket={basket}
+                setBasket={setBasket}
+                setIsLoading={setIsLoading}
+                setIsPaid={setIsPaid}
+              />
             </div>
           </div>
         )}

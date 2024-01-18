@@ -1,17 +1,22 @@
+/* OVER 1200 PX WIDTH SCREENS STYLE RULES */
+
 @media (min-width: 1200px) {
+  /* GENERAL */
+  /* GENERAL */
+
+  /* DISPLAY */
+
   .xl-wrap {
-    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 15px;
-    /* border: 1px solid green; */
   }
+
+  /* BOX */
+
+  /* Width */
   .xl-w48pc {
     width: 49%;
-    /* border: 1px dotted blue; */
   }
-  /* .xl-gap-15 {
-    gap: 15px;
-  } */
 }

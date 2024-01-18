@@ -1,32 +1,52 @@
+/* OVER 0 PX WIDTH SCREENS STYLE RULES */
+
 @media (min-width: 0px) {
-  /* .xs-hidden {
-    display: none;
-  } */
+  /* FOOTER */
+  /* FOOTER */
+
+  footer div {
+    font-size: 13px;
+    gap: 5px;
+    padding: 15px 0;
+  }
+
+  /* GENERAL */
+  /* GENERAL */
+
+  /* DISPLAY */
+
   .xs-col {
     flex-direction: column;
   }
+  .xs-hidden {
+    display: none;
+  }
+
+  /* FONT */
 
   .xs-14 {
     font-size: 14px;
   }
-  /* .xs-16 {
-    font-size: 16px;
-  } */
-
   .xs-18 {
     font-size: 18px;
   }
   .xs-28 {
     font-size: 28px;
   }
+
+  /* BOX */
+
+  /* Width */
   .xs-w100vw {
     width: 100vw;
   }
 
+  /* Padding */
   .xs-pad-10-0-10-20 {
     padding: 10px 0 10px 20px;
   }
 
+  /* Margin */
   .xs-mg-lr-20 {
     margin-left: 20px;
     margin-right: 20px;
@@ -34,19 +54,7 @@
   .xs-mg-l-20 {
     margin-left: 20px;
   }
-  /* .xs-mg-r-20 {
-    margin-right: 20px;
-  } */
   .xs-mg-b-30 {
     margin-bottom: 30px;
-  }
-  /* FOOTER */
-  footer div {
-    font-size: 13px;
-    gap: 5px;
-    padding: 15px 0;
-  }
-  .xs-hidden {
-    display: none;
   }
 }

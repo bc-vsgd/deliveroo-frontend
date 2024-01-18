@@ -1,15 +1,14 @@
 import { nanoid } from "nanoid";
+import changeQuantity from "../utils/changeQuantity";
 
-const MenusList = ({ title, data }) => {
+const MenusList = ({ title, data, basket, setBasket }) => {
   // data: menus array
-  //   console.log(data);
 
   return (
     <div className="menus-list-div xs-mg-lr-20 xs-mg-b-30 lg-mg-b-40 lg-mg-l-30">
       <h2 className="bold xs-18 sm-22">{title}</h2>
       <div className="menus-div xs-col xl-wrap">
         {data.map((menu, index) => {
-          //   console.log(menu.image.url);
           return (
             <div className="common-brd-F5F5F5 xl-w48pc " key={nanoid()}>
               <div className="common-row common-gap-15 common-pad-15">
@@ -25,7 +24,14 @@ const MenusList = ({ title, data }) => {
                 <div>
                   <img src={menu.image.url} alt={menu.image.altText} />
                 </div>
-                <button className="add-button">+</button>
+                <button
+                  className="add-button"
+                  onClick={() => {
+                    changeQuantity(basket, setBasket, menu, "+");
+                  }}
+                >
+                  +
+                </button>
               </div>
             </div>
           );

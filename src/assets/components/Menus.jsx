@@ -1,12 +1,11 @@
 // Components
 import MenusList from "./MenusList";
 
-const Menus = ({ data }) => {
+const Menus = ({ data, basket, setBasket }) => {
   // data: data.data.items
   const menusNames = data.filter((item) => {
     return item.name.includes("Menu");
   });
-  //   console.log(menusNames);
   const seriesMenus = menusNames.filter((item) => {
     return (
       (item.name.includes("SUB30") ||
@@ -23,16 +22,27 @@ const Menus = ({ data }) => {
   const myWayMenus = menusNames.filter((item) => {
     return item.name.includes("My Way");
   });
-  console.log("Series menus >>>>> ", seriesMenus);
-  console.log("Submelt menus >>>>>> ", submeltsMenus);
-  console.log("My way menus >>>> ", myWayMenus);
 
   return (
-    // <div className="menus lg-w400">
     <div>
-      <MenusList title="Menus SERIES" data={seriesMenus} />
-      <MenusList title="Menus SUBMELTS" data={submeltsMenus} />
-      <MenusList title="Menus Sub My Way" data={myWayMenus} />
+      <MenusList
+        title="Menus SERIES"
+        data={seriesMenus}
+        basket={basket}
+        setBasket={setBasket}
+      />
+      <MenusList
+        title="Menus SUBMELTS"
+        data={submeltsMenus}
+        basket={basket}
+        setBasket={setBasket}
+      />
+      <MenusList
+        title="Menus Sub My Way"
+        data={myWayMenus}
+        basket={basket}
+        setBasket={setBasket}
+      />
     </div>
   );
 };

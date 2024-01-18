@@ -1,55 +1,9 @@
+/* OVER 992 PX WIDTH SCREENS STYLE RULES */
+
 @media (min-width: 992px) {
-  .lg-row {
-    display: flex;
-    flex-direction: row;
-  }
-  .lg-16 {
-    font-size: 16px;
-  }
-  .lg-40 {
-    font-size: 40px;
-  }
-  .lg-mg-l-30 {
-    margin-left: 30px;
-  }
-  .lg-50 {
-    /* width: 50px; */
-    font-size: 50px;
-  }
-  .lg-w400 {
-    width: 400px;
-  }
-  .lg-w420 {
-    /* min-width: 420px; */
-    min-width: 420px;
-    border: 1px dotted black;
-  }
-  .lg-w50pc {
-    width: 50%;
-  }
-  .lg-h50 {
-    height: 50px;
-  }
-  .lg-mg-r-30 {
-    /* margin-left: 30px; */
-    margin-right: 30px;
-  }
-  .lg-mg-b-40 {
-    margin-bottom: 40px;
-  }
-  .lg-mg-b-45 {
-    margin-bottom: 45px;
-  }
-  .lg-pad-l-35 {
-    padding-left: 35px;
-  }
-  .lg-col-AAADAD {
-    color: #aaadad;
-    /* background-color: black; */
-  }
-  .lg-bgcol-E2E5E5 {
-    background-color: #e2e5e5;
-  }
+  /* BASKET */
+  /* BASKET */
+
   .basket {
     border: 1px solid #f5f5f5;
     background-color: white;
@@ -61,7 +15,7 @@
     position: sticky;
     top: 50px;
   }
-  .basket > div:first-child {
+  .empty-basket {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -76,7 +30,15 @@
     font-size: 16px;
     font-family: "IBM Plex Sans";
   }
+  .purchase-display-div {
+    display: flex;
+    gap: 10px;
+  }
+  .purchase-display-div button {
+    width: 20px;
+  }
 
+  /* FOOTER */
   /* FOOTER */
 
   footer div {
@@ -91,5 +53,75 @@
   }
   .footer-icon {
     font-size: 35px;
+  }
+
+  /* GENERAL */
+  /* GENERAL */
+
+  /* DISPLAY */
+
+  .lg-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* FONT */
+
+  /* Font size */
+  .lg-16 {
+    font-size: 16px;
+  }
+  .lg-40 {
+    font-size: 40px;
+  }
+  .lg-50 {
+    font-size: 50px;
+  }
+
+  /* Color */
+  .lg-col-AAADAD {
+    color: #aaadad;
+  }
+
+  /* BOX */
+
+  /* Width */
+  .lg-w400 {
+    width: 400px;
+  }
+  .lg-w420 {
+    min-width: 420px;
+  }
+  .lg-w50pc {
+    width: 50%;
+  }
+
+  /* Height */
+  .lg-h50 {
+    height: 50px;
+  }
+
+  /* Margin */
+  .lg-mg-l-30 {
+    margin-left: 30px;
+  }
+  .lg-mg-r-30 {
+    margin-right: 30px;
+  }
+  .lg-mg-b-40 {
+    margin-bottom: 40px;
+  }
+  .lg-mg-b-45 {
+    margin-bottom: 45px;
+  }
+
+  /* Padding */
+  .lg-pad-l-35 {
+    padding-left: 35px;
+  }
+
+  /* Background color */
+  .lg-bgcol-E2E5E5 {
+    background-color: #e2e5e5;
   }
 }
