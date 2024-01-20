@@ -7,7 +7,8 @@ const Basket = ({ basket, setBasket, setIsLoading, setIsPaid }) => {
   });
   totalPrice = totalPrice / 100;
   return (
-    <div className="basket xs-hidden lg-w420 lg-mg-r-20 lg-mg-r-30">
+    // <div className="basket xs-hidden lg-w420 lg-mg-r-20 lg-mg-r-30">
+    <div className="basket xs-hidden lg-visible  lg-mg-r-20 lg-mg-r-30">
       <div>
         {basket.length === 0 ? (
           <div className="empty-basket">
@@ -17,33 +18,39 @@ const Basket = ({ basket, setBasket, setIsLoading, setIsPaid }) => {
           </div>
         ) : (
           <div className="purchases-div">
+            <div className="bold">Votre panier</div>
+
             {basket.map((elt, ind) => {
               const quantity = elt[1];
               const name = elt[0].name;
               const price = elt[0].price.fractional / 100;
               return (
                 <div className="purchase-display-div" key={ind}>
-                  <button
-                    onClick={() => {
-                      changeQuantity(basket, setBasket, elt[0], "-");
-                    }}
-                  >
-                    -
-                  </button>
-                  <span>{quantity}</span>
-                  <button
-                    onClick={() => {
-                      changeQuantity(basket, setBasket, elt[0], "+");
-                    }}
-                  >
-                    +
-                  </button>
+                  <div className="common-w60">
+                    <button
+                      onClick={() => {
+                        changeQuantity(basket, setBasket, elt[0], "-");
+                      }}
+                    >
+                      -
+                    </button>
+                    <span>{quantity}</span>
+                    <button
+                      onClick={() => {
+                        changeQuantity(basket, setBasket, elt[0], "+");
+                      }}
+                    >
+                      +
+                    </button>
+                  </div>
                   <span>{name}</span>
-                  <span>{quantity * price}</span>
+                  <span className="common-w50">
+                    {(quantity * price).toFixed(2)}
+                  </span>
                 </div>
               );
             })}
-            <div className="total-price">
+            <div className="total-price bold">
               <span>Prix total</span>
               <span>{totalPrice}</span>
             </div>
@@ -51,7 +58,6 @@ const Basket = ({ basket, setBasket, setIsLoading, setIsPaid }) => {
         )}
       </div>
       <button
-        className="lg-h50 lg-bgcol-E2E5E5 lg-col-AAADAD bold"
         onClick={() => {
           if (basket.length !== 0) {
             setIsLoading(true);

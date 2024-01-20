@@ -4,7 +4,10 @@
   /* BASKET */
   /* BASKET */
 
-  .basket {
+  .lg-visible {
+    display: flex;
+  }
+  /* .basket {
     border: 1px solid #f5f5f5;
     background-color: white;
     height: 225px;
@@ -36,7 +39,7 @@
   }
   .purchase-display-div button {
     width: 20px;
-  }
+  } */
 
   /* FOOTER */
   /* FOOTER */
@@ -89,9 +92,9 @@
   .lg-w400 {
     width: 400px;
   }
-  .lg-w420 {
+  /* .lg-w420 {
     min-width: 420px;
-  }
+  } */
   .lg-w50pc {
     width: 50%;
   }

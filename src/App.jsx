@@ -24,13 +24,13 @@ function App() {
     const getRestaurantData = async () => {
       try {
         // LOCAL
-        // const url = "http://localhost:3000/";
-        // const { data } = await axios.get(url);
+        const url = "http://localhost:3000/";
+        const { data } = await axios.get(url);
 
         // REMOTE
-        const serverUrl =
-          "https://site--deliveroo-backend--r6xgg7xm7vcz.code.run/";
-        const { data } = await axios.get(serverUrl);
+        // const serverUrl =
+        //   "https://site--deliveroo-backend--r6xgg7xm7vcz.code.run/";
+        // const { data } = await axios.get(serverUrl);
         //
         setData(data);
       } catch (error) {
@@ -60,6 +60,7 @@ function App() {
                 basket={basket}
                 setBasket={setBasket}
               />
+
               <Basket
                 basket={basket}
                 setBasket={setBasket}

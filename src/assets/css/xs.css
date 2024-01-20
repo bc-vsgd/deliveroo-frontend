@@ -10,6 +10,13 @@
     padding: 15px 0;
   }
 
+  /* BASKET */
+  /* BASKET */
+
+  .basket .xs-visible {
+    display: block;
+  }
+
   /* GENERAL */
   /* GENERAL */
 

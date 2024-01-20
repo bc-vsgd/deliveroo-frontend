@@ -69,6 +69,69 @@ a {
   color: #585c5c;
 }
 
+/* BASKET */
+/* BASKET */
+
+.basket {
+  border: 1px solid #f5f5f5;
+  background-color: white;
+  height: 225px;
+  min-width: 420px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 50px;
+}
+.empty-basket {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.basket button {
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "IBM Plex Sans";
+}
+.basket > button {
+  width: 390px;
+  min-height: 50px;
+  font-weight: bold;
+  background-color: #e2e5e5;
+  color: #aaadad;
+}
+.purchase-display-div {
+  /* width: 100%; */
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+.purchase-display-div button {
+  width: 20px;
+}
+.purchase-display-div > span:nth-child(2) {
+  text-align: left;
+  /* display: flex; */
+  /* justify-content: left; */
+  /* color: blue;
+  border: 1px solid blue; */
+}
+.purchases-div {
+  /* width: 420px; */
+}
+.purchases-div > div:first-child {
+  font-size: 18px;
+}
+/* .purchases-div .total-price{
+  font-weight: bold;
+} */
+
 /* FOOTER */
 /* FOOTER */
 
@@ -141,6 +204,12 @@ footer a {
 /* BOX */
 
 /* Width */
+.common-w50 {
+  width: 50px;
+}
+.common-w60 {
+  width: 60px;
+}
 .common-w120 {
   width: 120px;
 }

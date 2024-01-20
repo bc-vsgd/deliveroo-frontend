@@ -1,4 +1,8 @@
 const changeQuantity = (basket, setBasket, menu, sign) => {
+  const basketDisplay = document.querySelector(".basket");
+  // .classList.add("xs-visible");
+  console.log(basketDisplay);
+  basketDisplay.classList.remove("xs-hidden");
   const newBasket = [...basket];
   const indFound = basket.findIndex((elt) => {
     return elt[0] === menu;
@@ -18,6 +22,9 @@ const changeQuantity = (basket, setBasket, menu, sign) => {
     }
   }
   setBasket(newBasket);
+  if (newBasket.length === 0) {
+    basketDisplay.classList.add("xs-hidden");
+  }
 };
 
 export default changeQuantity;
